@@ -29,6 +29,9 @@
         %hr/
         %p Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
+        = form_tag('/subscribe', method: "post", id: "subscribe", remote: "true") do
+          = email_field(:email, :address, {id: "email", placeholder: "email address"})
+          = submit_tag("Sign me up!")
   %section#about.bg-primary
     .container
       .row

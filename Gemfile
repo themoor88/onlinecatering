@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'haml-rails'
+gem 'mailchimp-api', require: 'mailchimp'
 gem 'puma'
 
 group :development do
