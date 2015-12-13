@@ -9,10 +9,10 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem "autoprefixer-rails"
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'haml-rails'
-gem 'mailchimp-api', require: 'mailchimp'
 gem 'puma'
 
 group :development do
