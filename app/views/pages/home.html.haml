@@ -1,117 +1,448 @@
-%nav#mainNav.navbar.navbar-default.navbar-fixed-top
-  .container-fluid
-    .navbar-header
-      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand.page-scroll{:href => "#page-top"}
-        %img{src: '/images/logo.png', width: '15%'}
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
-        %li
-          %a.page-scroll{:href => "#about"} Features
-        %li
-          %a.page-scroll{:href => "#services"} Services
-        %li
-          %a.page-scroll{:href => "#images"} How it Works
-        %li
-          %a.page-scroll{:href => "#contact"} Contact
+%body
+  %header
+    %nav
+      .row
+        / <img src="/images/logo-white.png" alt="Online Catering logo" class="logo">
+        / <img src="/images/logo.png" alt="Online Catering logo" class="logo-black">
+        %ul.main-nav.js--main-nav
+          %li
+            %a{:href => "#features"} Food delivery
+          %li
+            %a{:href => "#works"} How it works
+          %li
+            %a{:href => "#cities"} Our cities
+          %li
+            %a{:href => "#plans"} Sign up
+        %a.mobile-nav-icon.js--nav-icon
+          %i.ion-navicon-round
+    .row
+      .col-md-12
+        %h1
+          Goodbye junk food.
+          %br>/
+          Hello super healthy meals.
+        %a.btn.btn-full.js--scroll-to-plans{:href => "#"} I’m hungry
+        %a.btn.btn-ghost.js--scroll-to-features{:href => "#"} Show me more
+  / Features section
 
-%header
-  .header-content
-    .header-content-inner
-      %h1.title Online Catering
-      %h2.sub-title Family style meals, delivered to your office.
-      %hr/
-      %a.btn.btn-primary.btn-xl.main-button.page-scroll{:href => "#about"} Get Started
-%section#about.bg-primary
-  .container
+  %section#features.section-features.js--section-features
     .row
-      .col-lg-8.col-lg-offset-2.text-center
-        %h1.section-heading.title Every detail tailored to your need!
-        %hr.light/
-        %h2.text-faded We offer a variety of food based on your personal needs.
-%section#services
-  .container
+      .col-md-12
+        %h2 Get food fast – not fast food
+        %p.long-copy
+          Hello, we’re Online Catering, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+    .container
+      .row
+        .col-md-3
+          %i.fa.fa-4x.fa-globe
+          %h3 Up to 365 days/year
+          %p
+            Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+        .col-md-3
+          %i.ion-ios-stopwatch-outline.icon-big
+          %h3 Ready in 20 minutes
+          %p
+            You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+        .col-md-3
+          %i.ion-ios-nutrition-outline.icon-big
+          %h3 100% Organic
+          %p
+            All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+        .col-md-3
+          %i.ion-ios-cart-outline.icon-big
+          %h3 Order anything
+          %p
+            We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you.
+  / Meals section
+  %section.section-meals
+    %ul.meals-showcase.clearfix
+      %li
+        %figure.meal-photo
+          %img{:alt => "Korean bibimbap with egg and vegetables", :src => "/images/1.jpg"}/
+      %li
+        %figure.meal-photo
+          %img{:alt => "Simple italian pizza with cherry tomatoes", :src => "/images/2.jpg"}/
+      %li
+        %figure.meal-photo
+          %img{:alt => "Chicken breast steak with vegetables", :src => "/images/3.jpg"}/
+      %li
+        %figure.meal-photo
+          %img{:alt => "Autumn pumpkin soup", :src => "/images/4.jpg"}/
+    %ul.meals-showcase.clearfix
+      %li
+        %figure.meal-photo
+          %img{:alt => "Paleo beef steak with vegetables", :src => "/images/5.jpg"}/
+      %li
+        %figure.meal-photo
+          %img{:alt => "Healthy baguette with egg and vegetables", :src => "/images/6.jpg"}/
+      %li
+        %figure.meal-photo
+          %img{:alt => "Burger with cheddar and bacon", :src => "/images/7.jpg"}/
+      %li
+        %figure.meal-photo
+          %img{:alt => "Granola with cherries and strawberries", :src => "/images/8.jpg"}/
+  / Steps section
+  %section#works.section-steps
     .row
-      .col-lg-12.text-center
-        %img{src: '/images/logo.png', width: '15%'}
-        %h2.section-heading.first.title At Your Service
-        %hr.primary/
-  .container
+      %h2 How it works – Simple as 1, 2, 3
+      .row
+        .col-md-6
+          %img.app-screen.js--wp-2{:alt => "Online Catering app on iPhone", :src => "/images/app-iPhone.png"}/
+        .col-md-6
+          .works-step
+            %div 1
+            %p Choose the subscription plan that best fits your needs and sign up today.
+          .works-step
+            %div 2
+            %p Order your delicious meal using our mobile app or website. Or you can even call us!
+          .works-step
+            %div 3
+            %p Enjoy your meal after less than 20 minutes. See you the next time!
+          %a.btn-app{:href => "#"}
+            %img{:alt => "App store button", :src => "/images/download-app.svg"}/
+          %a.btn-app{:href => "#"}
+            %img{:alt => "Play store button", :src => "/images/download-app-android.png"}/
+  / Cities section
+  %section#cities.section-cities
     .row
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-cutlery.wow.bounceIn.text-primary
-          %h2 Personalized Meals
-          %h3.text-muted Meals catered to your liking.
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-globe.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
-          %h2 Vast Selection
-          %h3.text-muted Choose from cuisines from all over the world.
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-clock-o.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
-          %h2 Reliable Service
-          %h3.text-muted We deliver daily and within 1 hour of your order.
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary{"data-wow-delay" => ".3s"}
-          %h2 Dietary Labelling
-          %h3.text-muted We have gluten-free, kosher, halal, vegan and much more.
-%aside.bg-green
-  .container.text-center
-    .call-to-action
-      %h2 Are you a restaurant or a caterer?
-      %a.btn.btn-primary.btn-xl.main-button.page-scroll{:href => "#"} Join Us
-%section#images
-  .container
+      .col-md-12
+        %h2 We're currently in these cities
     .row
-      .col-lg-12.text-center
-        %h2.section-heading.title How it Works
-        %hr.primary/
-  .container
+      .col-md-3
+        %img{:alt => "Lisbon", :src => "/images/lisbon-3.jpg"}/
+        %h3 Lisbon
+        .city-feature
+          %i.ion-ios-person.icon-small
+          1600+ happy eaters
+        .city-feature
+          %i.ion-ios-star.icon-small
+          60+ top chefs
+        .city-feature
+          %i.ion-social-twitter.icon-small
+          %a{:href => "#"} @Online Catering_lx
+      .col-md-3
+        %img{:alt => "San Francisco", :src => "/images/san-francisco.jpg"}/
+        %h3 San Francisco
+        .city-feature
+          %i.ion-ios-person.icon-small
+          3700+ happy eaters
+        .city-feature
+          %i.ion-ios-star.icon-small
+          160+ top chefs
+        .city-feature
+          %i.ion-social-twitter.icon-small
+          %a{:href => "#"} @Online Catering_sf
+      .col-md-3
+        %img{:alt => "Berlin", :src => "/images/berlin.jpg"}/
+        %h3 Berlin
+        .city-feature
+          %i.ion-ios-person.icon-small
+          2300+ happy eaters
+        .city-feature
+          %i.ion-ios-star.icon-small
+          110+ top chefs
+        .city-feature
+          %i.ion-social-twitter.icon-small
+          %a{:href => "#"} @Online Catering_berlin
+      .col-md-3
+        %img{:alt => "London", :src => "/images/london.jpg"}/
+        %h3 London
+        .city-feature
+          %i.ion-ios-person.icon-small
+          1200+ happy eaters
+        .city-feature
+          %i.ion-ios-star.icon-small
+          50+ top chefs
+        .city-feature
+          %i.ion-social-twitter.icon-small
+          %a{:href => "#"} @Online Catering_london
+  / Testimonials section
+  %section.section-testimonials
     .row
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-street-view.wow.bounceIn.text-primary
-          %h3 Enter your postal code
-          %p.text-muted We deliver anywhere in Spain.
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-check.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
-          %h3 Select a package
-          %p.text-muted Packages range from types and amount of meals.
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-credit-card.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
-          %h3 Place your order
-          %p.text-muted We have many payment processors to choose from.
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary{"data-wow-delay" => ".3s"}
-          %h3 Be an awesome host!
-          %p.text-muted Sit back and let the food come to you!
+      %h2 Our customers can't live without us
+    .row
+      .col-md-4
+        %blockquote
+          Online Catering is just awesome! I just launched a startup which leaves me with no time for cooking, so Online Catering is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+          %cite
+            %img{:alt => "First customer", :src => "/images/customer-1.jpg"}/
+            Alberto Duncan
+      .col-md-4
+        %blockquote
+          Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+          %cite
+            %img{:alt => "Second customer", :src => "/images/customer-2.jpg"}/
+            Joana Silva
+      .col-md-4
+        %blockquote
+          I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Online Catering. Best food delivery service in the Bay Area. Keep up the great work!
+          %cite
+            %img{:alt => "Third customer", :src => "/images/customer-3.jpg"}/
+            Milton Chapman
+  / Plans section
+  %section#plans.section-plans.js--section-plans
+    .row
+      %h2 Start eating healthy today
+    .row
+      .col-md-4
+        .plan-box.js--wp-4
+          %div
+            %h3 Premium
+            %p.plan-price
+              $399
+              %span / month
+            %p.plan-price-month That's only $13.30 per meal
+          %div
+            %ul
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                1 meal every day
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                Order 24/7
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                Access to newest creations
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                Free delivery
+          %div
+            %a.btn.btn-full{:href => "#"} Sign up now
+      .col-md-4
+        .plan-box
+          %div
+            %h3 Pro
+            %p.plan-price
+              $149
+              %span / month
+            %p.plan-price-month That's only $14.90 per meal
+          %div
+            %ul
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                1 meal 10 days/month
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                Order 24/7
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                Access to newest creations
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                Free delivery
+          %div
+            %a.btn.btn-ghost{:href => "#"} Sign up now
+      .col-md-4
+        .plan-box
+          %div
+            %h3 Starter
+            %p.plan-price
+              $19
+              %span / meal
+            %p.plan-price-month  
+          %div
+            %ul
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                1 meal
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                Order from 8 am to 12 pm
+              %li
+                %i.ion-ios-close-empty.icon-small
+              %li
+                %i.ion-ios-checkmark-empty.icon-small>
+                Free delivery
+          %div
+            %a.btn.btn-ghost{:href => "#"} Sign up now
+  / Map section
+  .map-box
+    .map
+    .form-box
+      .row
+        %h2 We're happy to hear from you
+      .row
+        %form.contact-form{:action => "#", :method => "post"}
+          .row
+            .col.span-1-of-3
+              %label{:for => "name"} Name
+            .col.span-2-of-3
+              %input#name{:name => "name", :placeholder => "Your name", :required => "", :type => "text"}/
+          .row
+            .col.span-1-of-3
+              %label{:for => "email"} Email
+            .col.span-2-of-3
+              %input#email{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
+          .row
+            .col.span-1-of-3
+              %label{:for => "find-us"} How did you find us?
+            .col.span-2-of-3
+              %select#find-us{:name => "find-us"}
+                %option{:selected => "selected", :value => "friends"} Friends
+                %option{:value => "search"} Search engine
+                %option{:value => "ad"} Advertisement
+                %option{:value => "other"} Other
+          .row
+            .col.span-1-of-3
+              %label Newsletter
+            .col.span-2-of-3
+              %input#news{:checked => "checked", :name => "news", :type => "checkbox"}/
+              Yes, please
+          .row
+            .col.span-1-of-3
+              %label Drop us a line
+            .col.span-2-of-3
+              %textarea{:name => "message", :placeholder => "Your message"}
+          .row
+            .col.span-1-of-3
+              %label  
+            .col.span-2-of-3
+              %input{:type => "submit", :value => "Send it!"}/
+  %footer
+    .row
+      .col.span-1-of-2
+        %ul.footer-nav
+          %li
+            %a{:href => "#"} About us
+          %li
+            %a{:href => "#"} Blog
+          %li
+            %a{:href => "#"} Press
+          %li
+            %a{:href => "#"} iOS App
+          %li
+            %a{:href => "#"} Android App
+      .col.span-1-of-2
+        %ul.social-links
+          %li
+            %a{:href => "#"}
+              %i.ion-social-facebook
+          %li
+            %a{:href => "#"}
+              %i.ion-social-twitter
+          %li
+            %a{:href => "#"}
+              %i.ion-social-googleplus
+          %li
+            %a{:href => "#"}
+              %i.ion-social-instagram
+    .row
+      %p
+        Copyright © 2015 by Online Catering. All rights reserved.
+  / \%nav#mainNav.navbar.navbar-default.navbar-fixed-top
+  / \.container-fluid
+  / \.navbar-header
+  / \%button.navbar-toggle.collapsed{"data-target" =&gt; "#bs-example-navbar-collapse-1", "data-toggle" =&gt; "collapse", :type =&gt; "button"}
+  / \%span.sr-only Toggle navigation
+  / \%span.icon-bar
+  / \%span.icon-bar
+  / \%span.icon-bar
+  / \%a.navbar-brand.page-scroll{:href =&gt; "#page-top"}
+  / \%img{src: '/images/logo.png', width: '15%'}
+  / \#bs-example-navbar-collapse-1.collapse.navbar-collapse
+  / \%ul.nav.navbar-nav.navbar-right
+  / \%li
+  / \%a.page-scroll{:href =&gt; "#about"} Features
+  / \%li
+  / \%a.page-scroll{:href =&gt; "#services"} Services
+  / \%li
+  / \%a.page-scroll{:href =&gt; "#images"} How it Works
+  / \%li
+  / \%a.page-scroll{:href =&gt; "#contact"} Contact
 
-%aside.bg-dark
-  .container.text-center
-    .call-to-action
-      %h2 Excited to place an order?
-      %a.btn.btn-primary.btn-xl.main-button.page-scroll{:href => "#"} Be an Awesome Host
-%section#contact
-  .container
-    .row
-      .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Let's Get In Touch!
-        %hr.primary/
-        %p Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
-      .col-lg-4.col-lg-offset-2.text-center
-        %i.fa.fa-phone.fa-3x.wow.bounceIn
-        %p 123-456-6789
-      .col-lg-4.text-center
-        %i.fa.fa-envelope-o.fa-3x.wow.bounceIn{"data-wow-delay" => ".1s"}
-        %p
-          %a{:href => "mailto:your-email@your-domain.com"} admin@onlinecatering.es
+  / \%header
+  / \.header-content
+  / \.header-content-inner
+  / \%h1.title Online Catering
+  / \%h2.sub-title Family style meals, delivered to your office.
+  / \%hr/
+  / \%a.btn.btn-primary.btn-xl.main-button.page-scroll{:href =&gt; "#about"} Get Started
+  / \%section#about.bg-primary
+  / \.container
+  / \.row
+  / \.col-lg-8.col-lg-offset-2.text-center
+  / \%h1.section-heading.title Every detail tailored to your need!
+  / \%hr.light/
+  / \%h2.text-faded We offer a variety of food based on your personal needs.
+  / \%section#services
+  / \.container
+  / \.row
+  / \.col-lg-12.text-center
+  / \%img{src: '/images/logo.png', width: '15%'}
+  / \%h2.section-heading.first.title At Your Service
+  / \%hr.primary/
+  / \.container
+  / \.row
+  / \.col-lg-3.col-md-6.text-center
+  / \.service-box
+  / \%i.fa.fa-4x.fa-cutlery.wow.bounceIn.text-primary
+  / \%h2 Personalized Meals
+  / \%h3.text-muted Meals catered to your liking.
+  / \.col-lg-3.col-md-6.text-center
+  / \.service-box
+  / \%i.fa.fa-4x.fa-globe.wow.bounceIn.text-primary{"data-wow-delay" =&gt; ".1s"}
+  / \%h2 Vast Selection
+  / \%h3.text-muted Choose from cuisines from all over the world.
+  / \.col-lg-3.col-md-6.text-center
+  / \.service-box
+  / \%i.fa.fa-4x.fa-clock-o.wow.bounceIn.text-primary{"data-wow-delay" =&gt; ".2s"}
+  / \%h2 Reliable Service
+  / \%h3.text-muted We deliver daily and within 1 hour of your order.
+  / \.col-lg-3.col-md-6.text-center
+  / \.service-box
+  / \%i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary{"data-wow-delay" =&gt; ".3s"}
+  / \%h2 Dietary Labelling
+  / \%h3.text-muted We have gluten-free, kosher, halal, vegan and much more.
+  / \%aside.bg-green
+  / \.container.text-center
+  / \.call-to-action
+  / \%h2 Are you a restaurant or a caterer?
+  / \%a.btn.btn-primary.btn-xl.main-button.page-scroll{:href =&gt; "#"} Join Us
+  / \%section#images
+  / \.container
+  / \.row
+  / \.col-lg-12.text-center
+  / \%h2.section-heading.title How it Works
+  / \%hr.primary/
+  / \.container
+  / \.row
+  / \.col-lg-3.col-md-6.text-center
+  / \.service-box
+  / \%i.fa.fa-4x.fa-street-view.wow.bounceIn.text-primary
+  / \%h3 Enter your postal code
+  / \%p.text-muted We deliver anywhere in Spain.
+  / \.col-lg-3.col-md-6.text-center
+  / \.service-box
+  / \%i.fa.fa-4x.fa-check.wow.bounceIn.text-primary{"data-wow-delay" =&gt; ".1s"}
+  / \%h3 Select a package
+  / \%p.text-muted Packages range from types and amount of meals.
+  / \.col-lg-3.col-md-6.text-center
+  / \.service-box
+  / \%i.fa.fa-4x.fa-credit-card.wow.bounceIn.text-primary{"data-wow-delay" =&gt; ".2s"}
+  / \%h3 Place your order
+  / \%p.text-muted We have many payment processors to choose from.
+  / \.col-lg-3.col-md-6.text-center
+  / \.service-box
+  / \%i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary{"data-wow-delay" =&gt; ".3s"}
+  / \%h3 Be an awesome host!
+  / \%p.text-muted Sit back and let the food come to you!
+
+  / \%aside.bg-dark
+  / \.container.text-center
+  / \.call-to-action
+  / \%h2 Excited to place an order?
+  / \%a.btn.btn-primary.btn-xl.main-button.page-scroll{:href =&gt; "#"} Be an Awesome Host
+  / \%section#contact
+  / \.container
+  / \.row
+  / \.col-lg-8.col-lg-offset-2.text-center
+  / \%h2.section-heading Let's Get In Touch!
+  / \%hr.primary/
+  / \%p Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
+  / \.col-lg-4.col-lg-offset-2.text-center
+  / \%i.fa.fa-phone.fa-3x.wow.bounceIn
+  / \%p 123-456-6789
+  / \.col-lg-4.text-center
+  / \%i.fa.fa-envelope-o.fa-3x.wow.bounceIn{"data-wow-delay" =&gt; ".1s"}
+  / \%p
+  / \%a{:href =&gt; "mailto:your-email@your-domain.com"} admin@onlinecatering.es
