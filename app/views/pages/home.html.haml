@@ -2,27 +2,32 @@
   %header
     %nav
       .row
-        / <img src="/images/logo-white.png" alt="Online Catering logo" class="logo">
-        / <img src="/images/logo.png" alt="Online Catering logo" class="logo-black">
-        %ul.main-nav.js--main-nav
-          %li
-            %a{:href => "#features"} Food delivery
-          %li
-            %a{:href => "#works"} How it works
-          %li
-            %a{:href => "#cities"} Our cities
-          %li
-            %a{:href => "#plans"} Sign up
-        %a.mobile-nav-icon.js--nav-icon
-          %i.ion-navicon-round
+        .container
+          .logos
+            %img{src: '/images/logo.png', width: '40%'}
+          %ul.main-nav.js--main-nav
+            %li
+              %a{:href => "#features"} Food delivery
+            %li
+              %a{:href => "#works"} How it works
+            %li
+              %a{:href => "#cities"} Our cities
+            %li
+              %a{:href => "#plans"} Sign up
+          %a.mobile-nav-icon.js--nav-icon
+            %i.ion-navicon-round
     .row
-      .col-md-12
-        %h1
-          Goodbye junk food.
-          %br>/
-          Hello super healthy meals.
-        %a.btn.btn-full.js--scroll-to-plans{:href => "#"} I’m hungry
-        %a.btn.btn-ghost.js--scroll-to-features{:href => "#"} Show me more
+      .container
+        .col-md-12
+          %h1.title
+            Goodbye junk food.
+            %br>/
+            Hello super healthy meals.
+          .row.email
+            .col-md-4
+              %input#email{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
+          %a.btn.btn-full.js--scroll-to-plans{:href => "#"} I’m hungry
+
   / Features section
 
   %section#features.section-features.js--section-features
@@ -31,25 +36,25 @@
         %h2 Get food fast – not fast food
         %p.long-copy
           Hello, we’re Online Catering, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
-    .container
+    .container.text-center
       .row
         .col-md-3
-          %i.fa.fa-4x.fa-globe
+          %i.fa.fa-4x.fa-calendar
           %h3 Up to 365 days/year
           %p
             Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
         .col-md-3
-          %i.ion-ios-stopwatch-outline.icon-big
+          %i.fa.fa-4x.fa-clock-o
           %h3 Ready in 20 minutes
           %p
             You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
         .col-md-3
-          %i.ion-ios-nutrition-outline.icon-big
+          %i.fa.fa-4x.fa-cart-plus
           %h3 100% Organic
           %p
             All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
         .col-md-3
-          %i.ion-ios-cart-outline.icon-big
+          %i.fa.fa-4x.fa-check
           %h3 Order anything
           %p
             We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you.
@@ -86,8 +91,7 @@
     .row
       %h2 How it works – Simple as 1, 2, 3
       .row
-        .col-md-6
-          %img.app-screen.js--wp-2{:alt => "Online Catering app on iPhone", :src => "/images/app-iPhone.png"}/
+        .col-md-3
         .col-md-6
           .works-step
             %div 1
@@ -98,68 +102,36 @@
           .works-step
             %div 3
             %p Enjoy your meal after less than 20 minutes. See you the next time!
-          %a.btn-app{:href => "#"}
-            %img{:alt => "App store button", :src => "/images/download-app.svg"}/
-          %a.btn-app{:href => "#"}
-            %img{:alt => "Play store button", :src => "/images/download-app-android.png"}/
+
   / Cities section
   %section#cities.section-cities
     .row
-      .col-md-12
-        %h2 We're currently in these cities
-    .row
-      .col-md-3
-        %img{:alt => "Lisbon", :src => "/images/lisbon-3.jpg"}/
-        %h3 Lisbon
-        .city-feature
-          %i.ion-ios-person.icon-small
-          1600+ happy eaters
-        .city-feature
-          %i.ion-ios-star.icon-small
-          60+ top chefs
-        .city-feature
-          %i.ion-social-twitter.icon-small
-          %a{:href => "#"} @Online Catering_lx
-      .col-md-3
-        %img{:alt => "San Francisco", :src => "/images/san-francisco.jpg"}/
-        %h3 San Francisco
-        .city-feature
-          %i.ion-ios-person.icon-small
-          3700+ happy eaters
-        .city-feature
-          %i.ion-ios-star.icon-small
-          160+ top chefs
-        .city-feature
-          %i.ion-social-twitter.icon-small
-          %a{:href => "#"} @Online Catering_sf
-      .col-md-3
-        %img{:alt => "Berlin", :src => "/images/berlin.jpg"}/
-        %h3 Berlin
-        .city-feature
-          %i.ion-ios-person.icon-small
-          2300+ happy eaters
-        .city-feature
-          %i.ion-ios-star.icon-small
-          110+ top chefs
-        .city-feature
-          %i.ion-social-twitter.icon-small
-          %a{:href => "#"} @Online Catering_berlin
-      .col-md-3
-        %img{:alt => "London", :src => "/images/london.jpg"}/
-        %h3 London
-        .city-feature
-          %i.ion-ios-person.icon-small
-          1200+ happy eaters
-        .city-feature
-          %i.ion-ios-star.icon-small
-          50+ top chefs
-        .city-feature
-          %i.ion-social-twitter.icon-small
-          %a{:href => "#"} @Online Catering_london
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-cutlery.wow.bounceIn.text-primary
+          %h2 Personalized Meals
+          %h3.text-muted Meals catered to your liking.
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-globe.wow.bounceIn.text-primary
+          %h2 Vast Selection
+          %h3.text-muted Choose from cuisines from all over the world.
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-clock-o.wow.bounceIn.text-primary
+          %h2 Reliable Service
+          %h3.text-muted We deliver daily and within 1 hour of your order.
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary
+          %h2 Dietary Labelling
+          %h3.text-muted We have gluten-free, kosher, halal, vegan and much more.
+
+
   / Testimonials section
   %section.section-testimonials
     .row
-      %h2 Our customers can't live without us
+      %h2 Are you a caterer?
     .row
       .col-md-4
         %blockquote
@@ -179,128 +151,51 @@
           %cite
             %img{:alt => "Third customer", :src => "/images/customer-3.jpg"}/
             Milton Chapman
-  / Plans section
-  %section#plans.section-plans.js--section-plans
-    .row
-      %h2 Start eating healthy today
-    .row
-      .col-md-4
-        .plan-box.js--wp-4
-          %div
-            %h3 Premium
-            %p.plan-price
-              $399
-              %span / month
-            %p.plan-price-month That's only $13.30 per meal
-          %div
-            %ul
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                1 meal every day
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                Order 24/7
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                Access to newest creations
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                Free delivery
-          %div
-            %a.btn.btn-full{:href => "#"} Sign up now
-      .col-md-4
-        .plan-box
-          %div
-            %h3 Pro
-            %p.plan-price
-              $149
-              %span / month
-            %p.plan-price-month That's only $14.90 per meal
-          %div
-            %ul
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                1 meal 10 days/month
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                Order 24/7
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                Access to newest creations
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                Free delivery
-          %div
-            %a.btn.btn-ghost{:href => "#"} Sign up now
-      .col-md-4
-        .plan-box
-          %div
-            %h3 Starter
-            %p.plan-price
-              $19
-              %span / meal
-            %p.plan-price-month  
-          %div
-            %ul
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                1 meal
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                Order from 8 am to 12 pm
-              %li
-                %i.ion-ios-close-empty.icon-small
-              %li
-                %i.ion-ios-checkmark-empty.icon-small>
-                Free delivery
-          %div
-            %a.btn.btn-ghost{:href => "#"} Sign up now
+
   / Map section
-  .map-box
-    .map
-    .form-box
-      .row
-        %h2 We're happy to hear from you
-      .row
-        %form.contact-form{:action => "#", :method => "post"}
-          .row
-            .col.span-1-of-3
-              %label{:for => "name"} Name
-            .col.span-2-of-3
-              %input#name{:name => "name", :placeholder => "Your name", :required => "", :type => "text"}/
-          .row
-            .col.span-1-of-3
-              %label{:for => "email"} Email
-            .col.span-2-of-3
-              %input#email{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
-          .row
-            .col.span-1-of-3
-              %label{:for => "find-us"} How did you find us?
-            .col.span-2-of-3
-              %select#find-us{:name => "find-us"}
-                %option{:selected => "selected", :value => "friends"} Friends
-                %option{:value => "search"} Search engine
-                %option{:value => "ad"} Advertisement
-                %option{:value => "other"} Other
-          .row
-            .col.span-1-of-3
-              %label Newsletter
-            .col.span-2-of-3
-              %input#news{:checked => "checked", :name => "news", :type => "checkbox"}/
-              Yes, please
-          .row
-            .col.span-1-of-3
-              %label Drop us a line
-            .col.span-2-of-3
-              %textarea{:name => "message", :placeholder => "Your message"}
-          .row
-            .col.span-1-of-3
-              %label  
-            .col.span-2-of-3
-              %input{:type => "submit", :value => "Send it!"}/
+  .row.last
+    .col-md-3
+    .col-md-6
+      %h1.text-center Keep in touch!
+      %form.contact-form{:action => "#", :method => "post"}
+        .row
+          .col.span-1-of-3
+            %label{:for => "name"} Name
+          .col.span-2-of-3
+            %input#name{:name => "name", :placeholder => "Your name", :required => "", :type => "text"}/
+        .row
+          .col.span-1-of-3
+            %label{:for => "email"} Email
+          .col.span-2-of-3
+            %input#email{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
+        .row
+          .col.span-1-of-3
+            %label{:for => "find-us"} How did you find us?
+          .col.span-2-of-3
+            %select#find-us{:name => "find-us"}
+              %option{:selected => "selected", :value => "friends"} Friends
+              %option{:value => "search"} Search engine
+              %option{:value => "ad"} Advertisement
+              %option{:value => "other"} Other
+        .row
+          .col.span-1-of-3
+            %label Newsletter
+          .col.span-2-of-3
+            %input#news{:checked => "checked", :name => "news", :type => "checkbox"}/
+            Yes, please
+        .row
+          .col.span-1-of-3
+            %label Drop us a line
+          .col.span-2-of-3
+            %textarea{:name => "message", :placeholder => "Your message"}
+        .row
+          .col.span-1-of-3
+            %label  
+          .col.span-2-of-3
+            %input{:type => "submit", :value => "Send it!"}/
   %footer
     .row
-      .col.span-1-of-2
+      .col-md-6
         %ul.footer-nav
           %li
             %a{:href => "#"} About us
@@ -308,11 +203,8 @@
             %a{:href => "#"} Blog
           %li
             %a{:href => "#"} Press
-          %li
-            %a{:href => "#"} iOS App
-          %li
-            %a{:href => "#"} Android App
-      .col.span-1-of-2
+
+      .col-md-6
         %ul.social-links
           %li
             %a{:href => "#"}

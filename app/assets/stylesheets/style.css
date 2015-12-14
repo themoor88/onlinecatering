@@ -1,3 +1,25 @@
+.title {
+  margin-top: 10em;
+  color: white;
+}
+
+.main-nav.js--main-nav {
+  font-size: 1.3em;
+}
+
+.row.email {
+  margin-bottom: 10px;
+}
+
+.row.last {
+  padding: 10px;
+}
+
+.logos {
+  display: inline-block;
+  margin-top:20px;
+}
+
 /* -------------------------------------------------------------- */
 /* BASIC SETUP */
 /* -------------------------------------------------------------- */
@@ -174,7 +196,7 @@ input[type=submit]:active { background-color: #cf6d17; }
 /* HEADER */
 /* -------------------------------------------------------------- */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/coolheader.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
