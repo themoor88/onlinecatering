@@ -15,114 +15,92 @@
         %li
           %a.page-scroll{:href => "#services"} Services
         %li
-          %a.page-scroll{:href => "#portfolio"} Caterers
+          %a.page-scroll{:href => "#images"} How it Works
         %li
           %a.page-scroll{:href => "#contact"} Contact
 
 %header
   .header-content
     .header-content-inner
-      %h1 Family style meals, delivered to your office.
+      %h1.title Online Catering
+      %h2.sub-title Family style meals, delivered to your office.
       %hr/
-      %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Get Started
+      %a.btn.btn-primary.btn-xl.main-button.page-scroll{:href => "#about"} Get Started
 %section#about.bg-primary
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Every detail tailored to your need!
+        %h1.section-heading.title Every detail tailored to your need!
         %hr.light/
-        %p.text-faded We offer a variety of food based on your personal needs. Incl
-        %a.btn.btn-default.btn-xl{:href => "#"} Get Started!
+        %h2.text-faded We offer a variety of food based on your personal needs.
 %section#services
   .container
     .row
       .col-lg-12.text-center
-        %h2.section-heading At Your Service
+        %img{src: '/images/logo.png', width: '15%'}
+        %h2.section-heading.first.title At Your Service
         %hr.primary/
   .container
     .row
       .col-lg-3.col-md-6.text-center
         .service-box
-          %i.fa.fa-4x.fa-diamond.wow.bounceIn.text-primary
-          %h3 Sturdy Templates
-          %p.text-muted Our templates are updated regularly so they don't break.
+          %i.fa.fa-4x.fa-cutlery.wow.bounceIn.text-primary
+          %h2 Personalized Meals
+          %h3.text-muted Meals catered to your liking.
       .col-lg-3.col-md-6.text-center
         .service-box
-          %i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
-          %h3 Ready to Ship
-          %p.text-muted You can use this theme as is, or you can make changes!
+          %i.fa.fa-4x.fa-globe.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
+          %h2 Vast Selection
+          %h3.text-muted Choose from cuisines from all over the world.
       .col-lg-3.col-md-6.text-center
         .service-box
-          %i.fa.fa-4x.fa-newspaper-o.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
-          %h3 Up to Date
-          %p.text-muted We update dependencies to keep things fresh.
+          %i.fa.fa-4x.fa-clock-o.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
+          %h2 Reliable Service
+          %h3.text-muted We deliver daily and within 1 hour of your order.
       .col-lg-3.col-md-6.text-center
         .service-box
           %i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary{"data-wow-delay" => ".3s"}
-          %h3 Made with Love
-          %p.text-muted You have to make your websites with love these days!
-%section#portfolio.no-padding
-  .container-fluid
-    .row.no-gutter
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "#"}
-          %img.img-responsive{:alt => "", :src => "/images/1.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "#"}
-          %img.img-responsive{:alt => "", :src => "/images/2.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "#"}
-          %img.img-responsive{:alt => "", :src => "/images/3.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "#"}
-          %img.img-responsive{:alt => "", :src => "/images/4.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "#"}
-          %img.img-responsive{:alt => "", :src => "/images/5.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "#"}
-          %img.img-responsive{:alt => "", :src => "/images/6.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
+          %h2 Dietary Labelling
+          %h3.text-muted We have gluten-free, kosher, halal, vegan and much more.
+%aside.bg-green
+  .container.text-center
+    .call-to-action
+      %h2 Are you a restaurant or a caterer?
+      %a.btn.btn-primary.btn-xl.main-button.page-scroll{:href => "#"} Join Us
+%section#images
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading.title How it Works
+        %hr.primary/
+  .container
+    .row
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-street-view.wow.bounceIn.text-primary
+          %h3 Enter your postal code
+          %p.text-muted We deliver anywhere in Spain.
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-check.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
+          %h3 Select a package
+          %p.text-muted Packages range from types and amount of meals.
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-credit-card.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
+          %h3 Place your order
+          %p.text-muted We have many payment processors to choose from.
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary{"data-wow-delay" => ".3s"}
+          %h3 Be an awesome host!
+          %p.text-muted Sit back and let the food come to you!
+
 %aside.bg-dark
   .container.text-center
     .call-to-action
-      %h2 Free Download at Start Bootstrap!
-      %a.btn.btn-default.btn-xl.wow.tada{:href => "#"} Download Now!
+      %h2 Excited to place an order?
+      %a.btn.btn-primary.btn-xl.main-button.page-scroll{:href => "#"} Be an Awesome Host
 %section#contact
   .container
     .row
@@ -136,4 +114,4 @@
       .col-lg-4.text-center
         %i.fa.fa-envelope-o.fa-3x.wow.bounceIn{"data-wow-delay" => ".1s"}
         %p
-          %a{:href => "mailto:your-email@your-domain.com"} feedback@startbootstrap.com
+          %a{:href => "mailto:your-email@your-domain.com"} admin@onlinecatering.es
