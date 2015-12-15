@@ -1,6 +1,6 @@
 $(function() {
   $(".changer").typed({
-    strings: ["Office Meetings", "Weddings", "Birthdays", "Parties", "Get Togethers"],
+    strings: ["Meetings", "Events", "Weddings", "Birthdays", "Parties", "Get Togethers"],
     typeSpeed: 50,
     loop: true
   });
