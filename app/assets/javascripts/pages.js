@@ -43,7 +43,7 @@ $(function() {
         '<div class="row form">' +
           '<div class="col-md-12">' +
             '<label for="phone" /> Phone' +
-            '<input name="phone" placeholder= "Phone Number with Postal Code" required= "", type= "text" />' +
+            '<input name="phone" placeholder= "Phone Number with Area Code" required= "", type= "text" />' +
           '</div>' +
         '</div>',
       buttons: {
