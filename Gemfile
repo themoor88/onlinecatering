@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "autoprefixer-rails"
 gem 'bootbox-rails'
 gem 'bootstrap-sass'
+gem 'devise'
 gem 'figaro'
 gem 'font-awesome-rails'
 gem 'haml-rails'
