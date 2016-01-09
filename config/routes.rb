@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {
-    registrations: 'users/custom_devise/registrations'
-    sessions: 'caterers/custom_devise/sessions'
+    registrations: 'users/custom_devise/registrations',
+    sessions: 'users/custom_devise/sessions'
   }
 
   devise_for :caterers, controllers: {
-    registrations: 'caterers/custom_devise/registrations'
+    registrations: 'caterers/custom_devise/registrations',
     sessions: 'caterers/custom_devise/sessions'
   }
 
