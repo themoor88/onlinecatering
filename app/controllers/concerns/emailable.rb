@@ -3,7 +3,7 @@ module Emailable
 
   def setup_email_info_and_send_email(options)
     # Split the TO email by bar (|)
-    to_emails = (Figaro.env.override_send_to_email.present? ? Figaro.env.override_send_to_email : options[:to]).split('|')
+    to_emails = options[:to]).split('|')
     # Repeat the TO NAME by the number of to_emails since SendGrid requires to_emails.count == to_name.count.
     to_names = Array.new(to_emails.count, (options[:to_name] || ''))
 
@@ -21,10 +21,6 @@ module Emailable
     # only send email if the ENV says so (hacky because ENV can only store strings)
     send_email(email_info) if Figaro.env.send_email.downcase.eql?('true')
   end
-
-
-  # KZ: I would love to make this method private, but since it's included as a concern, the private method can be called wherever this concern is included.
-  # private
 
   def send_email(email_info)
     # Initiating the SendGrid API
