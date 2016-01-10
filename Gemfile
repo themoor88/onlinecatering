@@ -16,8 +16,8 @@ gem 'devise'
 gem 'figaro'
 gem 'font-awesome-rails'
 gem 'haml-rails'
-gem 'mandrill-api'
 gem 'puma'
+gem 'sendgrid-ruby'
 
 group :development do
   gem 'web-console', '~> 2.0'
