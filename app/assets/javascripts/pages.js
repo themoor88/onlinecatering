@@ -17,7 +17,8 @@ $(function() {
   // Ajax call for adding a subscriber to the list.
   function addSubscriber(email) {
     $.ajax({
-      url: 'https://api.sendgrid.com/v3/contactdb/recipients',
+      url: '/subscribe',
+      data: {email: email},
       type: 'POST',
       dataType: 'JSON',
       success: function(data) {
@@ -30,7 +31,7 @@ $(function() {
     });
   }
 
-  // Bootbox modal for adding an address.
+  // Bootbox modal for adding a subscriber.
   function addAddressBootbox(form) {
     bootbox.dialog({
       title: gon.bootbox_translations.add_address.title,

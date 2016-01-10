@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root 'pages#home'
+  post '/subscribe' => 'pages#subscribe_email'
+
   devise_for :users, controllers: {
     registrations: 'users/custom_devise/registrations',
     sessions: 'users/custom_devise/sessions'
@@ -9,11 +12,8 @@ Rails.application.routes.draw do
     sessions: 'caterers/custom_devise/sessions'
   }
 
-  root 'pages#home'
-  post '/subscribe' => 'pages#subscribe_email'
 
   devise_scope :user do
-
     namespace :users do
       get '/profile' => 'dashboard#profile', as: 'profile'
       resources :orders
