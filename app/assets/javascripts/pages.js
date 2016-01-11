@@ -23,14 +23,53 @@ $(function() {
       dataType: 'JSON',
       success: function(data) {
         if (data.success) {
-          console.log('success');
+          bootbox.dialog({
+            title: 'Thank You!',
+            message: 'We will keep you updated and let you know when we officially launch.',
+            closeButton: false,
+            buttons: {
+              success: {
+                label: 'OK',
+                className: 'btn btn-success',
+                callback: function() {
+                  $('input#email').val("");
+                }
+              }
+            }
+          });
         } else {
-          console.log(data);
+          bootbox.dialog({
+            title: 'Something went wrong!',
+            message: 'We couldn\'t add your email. Please try again.',
+            closeButton: false,
+            buttons: {
+              success: {
+                label: 'OK',
+                className: 'btn btn-success',
+                callback: function() {
+                  $('input#email').val("");
+                }
+              }
+            }
+          });
         }
       },
 
       error: function(jqXHR, textStatus, errorThrown) {
-        console.log(jqXHR);
+        bootbox.dialog({
+          title: 'Something went wrong!',
+          message: 'We couldn\'t add your email. Please try again.',
+          closeButton: false,
+          buttons: {
+            success: {
+              label: 'OK',
+              className: 'btn btn-success',
+              callback: function() {
+                $('input#email').val("");
+              }
+            }
+          }
+        });
       }
     });
   }
@@ -89,16 +128,17 @@ $(function() {
 
     function thanksBootbox() {
       bootbox.dialog({
-      title: 'Become a Caterer',
-      message: 'Thanks a lot! One of our representatives will contact you shortly.',
-      buttons: {
-        success: {
-          label: 'OK',
-          className: 'btn btn-success',
-          callback: function() {}
+        title: 'Become a Caterer',
+        message: 'Thanks a lot! One of our representatives will contact you shortly.',
+        closeButton: false,
+        buttons: {
+          success: {
+            label: 'OK',
+            className: 'btn btn-success',
+            callback: function() {}
+          }
         }
-      }
-    });
+      });
     }
   });
 });
