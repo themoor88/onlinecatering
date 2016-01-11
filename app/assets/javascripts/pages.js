@@ -22,20 +22,16 @@ $(function() {
       type: 'POST',
       dataType: 'JSON',
       success: function(data) {
-        console.log(data);
+        if (data.success) {
+          console.log('success');
+        } else {
+          console.log(data);
+        }
       },
 
       error: function(jqXHR, textStatus, errorThrown) {
         console.log(jqXHR);
       }
-    });
-  }
-
-  // Bootbox modal for adding a subscriber.
-  function addAddressBootbox(form) {
-    bootbox.dialog({
-      title: gon.bootbox_translations.add_address.title,
-      message: form
     });
   }
 

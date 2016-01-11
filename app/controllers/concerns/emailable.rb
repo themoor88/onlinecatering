@@ -2,22 +2,16 @@ module Emailable
   extend ActiveSupport::Concerns
 
   def setup_email_info_and_send_email(options)
-    # Split the TO email by bar (|)
-    to_emails = options[:to].split('|')
-    # Repeat the TO NAME by the number of to_emails since SendGrid requires to_emails.count == to_name.count.
-    to_names = Array.new(to_emails.count, (options[:to_name] || ''))
-
     email_info = {
       email_parameters: {
-        to: to_emails,
-        to_name: to_names,
-        subject: (Rails.env.development? || Rails.env.integration?) ? "[#{Rails.env}]" : ' '
+        to: options[:to] || '',
+        to_name: options[:to_name] || '',
+        subject: ' '
       },
 
       substitutions: options[:substitutions] || {},
       template_id: options[:template_id]
     }
-
     send_email(email_info)
   end
 

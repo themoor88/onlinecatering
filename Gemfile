@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'annotate'
 gem "autoprefixer-rails"
 gem 'bootbox-rails'
 gem 'bootstrap-sass'
@@ -18,7 +19,6 @@ gem 'font-awesome-rails'
 gem 'haml-rails'
 gem 'puma'
 gem 'sendgrid-ruby'
-gem 'sendgrid_toolkit', '>= 1.1.1'
 
 group :development do
   gem 'web-console', '~> 2.0'
