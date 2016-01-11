@@ -24,7 +24,7 @@
           .row.email
             .col-md-4
               %input#email{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
-          %a.btn.btn-full.js--scroll-to-plans{:href => "#"} I’m hungry
+          %a.btn.btn-full.js--scroll-to-plans{:href => "#"} Tell me when you launch
 
   / Features section
   %section#delivery.section-features.js--section-features
@@ -141,7 +141,7 @@
           .col.span-1-of-3
             %label Newsletter
           .col.span-2-of-3
-            %input#news{:checked => "checked", :name => "news", :type => "checkbox"}/
+            %input#news{:checked => "checked", :name => "news", :type => "checkbox"}
             Yes, please
         .row
           .col.span-1-of-3
@@ -152,7 +152,7 @@
           .col.span-1-of-3
             %label  
           .col.span-2-of-3
-            %input{:type => "submit", :value => "Send it!"}/
+            %input{:type => "submit", :value => "Send it!"}
 
   %footer
     .row
