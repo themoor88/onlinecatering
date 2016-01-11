@@ -6,4 +6,4 @@
 
   ga('create', 'UA-71520257-1', 'auto');
   ga('send', 'pageview');
- });
+});
