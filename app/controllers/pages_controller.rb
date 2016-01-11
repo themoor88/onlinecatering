@@ -11,7 +11,7 @@ class PagesController < ApplicationController
         to_name: '',
         template_id: Figaro.env.sendgrid_subscription_email_id,
         substitutions: {
-          '-email-': params[:email]
+          '-email-':params[:email]
         }
       }
       setup_email_info_and_send_email(options)
