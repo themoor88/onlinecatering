@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-# TODO add gems
 
 ruby '2.2.2'
 
