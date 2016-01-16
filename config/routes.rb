@@ -12,7 +12,6 @@ Rails.application.routes.draw do
     sessions: 'caterers/custom_devise/sessions'
   }
 
-
   devise_scope :user do
     namespace :users do
       get '/profile' => 'dashboard#profile', as: 'profile'
