@@ -22,6 +22,7 @@ gem 'haml-rails'
 gem 'puma'
 gem 'sendgrid-ruby'
 gem "squeel"
+gem 'stripe'
 
 group :development do
   gem 'web-console', '~> 2.0'
