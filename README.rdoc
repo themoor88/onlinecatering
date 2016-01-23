@@ -1,1 +1,44 @@
 This is a quick MVP for Online Catering.
+
+Vendors/Caterers
+
+Food packages
+Allergy Information
+description
+what’s included
+per head
+image slide show
+
+Food Preferences/Allergies
+
+
+Food Categories/Event Type
+
+Orders
+delivery location
+date and time
+people
+
+Food Quality
+
+Presentation
+
+Delivery
+
+Overall
+
+Search Page = Specific food package template
+Vendors Page = specific vendors with food packages
+Order page with steps
+Account details page for caterer and customer
+Orders page for both as well
+
+Reviews
+
+Cards
+
+Addresses
+
+
+
+
