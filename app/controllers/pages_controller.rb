@@ -4,6 +4,9 @@ class PagesController < ApplicationController
   def home
   end
 
+  def index
+  end
+
   def subscribe_email
     if params[:email].present?
       options = {

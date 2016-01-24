@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
+  get '/index' => 'pages#index'
   post '/subscribe' => 'pages#subscribe_email'
 
   devise_for :users, controllers: {
