@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  # root 'pages#home'
   get '/index' => 'pages#index'
   post '/subscribe' => 'pages#subscribe_email'
 

@@ -1,186 +1,186 @@
-%body
-  %header
-    %nav
-      .row
-        .container
-          .logos
-            %img{src: '/images/logo.png', width: '27%'}
-          %ul.main-nav.js--main-nav
-            %li
-              %a{:href => "#delivery"} Food delivery
-            %li
-              %a{:href => "#works"} How it works
-            %li
-              %a{:href => "#caterers"} Caterers
-          %a.mobile-nav-icon.js--nav-icon
-            %i.ion-navicon-round
-    .row
-      .container
-        .col-md-12
-          %h1.title
-            Its Party Time.
-            %br>/
-            Order Catering for <strong class="changer"></strong>.
-          .row.email
-            .col-md-4
-              %input#email{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
-          %a.btn.btn-full.js--scroll-to-plans{:href => "#"} Tell me when you launch
+/ %body
+/   %header
+/     %nav
+/       .row
+/         .container
+/           .logos
+/             %img{src: '/images/logo.png', width: '27%'}
+/           %ul.main-nav.js--main-nav
+/             %li
+/               %a{:href => "#delivery"} Food delivery
+/             %li
+/               %a{:href => "#works"} How it works
+/             %li
+/               %a{:href => "#caterers"} Caterers
+/           %a.mobile-nav-icon.js--nav-icon
+/             %i.ion-navicon-round
+/     .row
+/       .container
+/         .col-md-12
+/           %h1.title
+/             Its Party Time.
+/             %br>/
+/             Order Catering for <strong class="changer"></strong>.
+/           .row.email
+/             .col-md-4
+/               %input#email{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
+/           %a.btn.btn-full.js--scroll-to-plans{:href => "#"} Tell me when you launch
 
-  / Features section
-  %section#delivery.section-features.js--section-features
-    .row
-      .col-md-12
-        %h2 Hosts have to enjoy this party too.
-        %p.long-copy
-          Hello, we’re Online Catering, your new curated catering market place. We know you’re always busy. Not enough time to host and enjoy the party. So let us take care of that, we’re really good at it, we promise!
-    .container.text-center
-      .row
-        .col-md-3
-          %i.fa.fa-4x.fa-calendar
-          %h3 Quality
-          %p
-            Quality is one of the major values defining us. We focus on quality control and the authenticity of the recipes as well as all the ingredients used for preparation.
-        .col-md-3
-          %i.fa.fa-4x.fa-clock-o
-          %h3 On Time
-          %p
-            Choose the date and time of your party and we promise to be on time.
-        .col-md-3
-          %i.fa.fa-4x.fa-cart-plus
-          %h3 Choice is yours
-          %p
-            From Starters to Desserts, we don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you.
-        .col-md-3
-          %i.fa.fa-4x.fa-check
-          %h3 Affordable pricing
-          %p
-            Options for all budgets. With pricing fit for everyone. Host a party without breaking your wallet.
+/   / Features section
+/   %section#delivery.section-features.js--section-features
+/     .row
+/       .col-md-12
+/         %h2 Hosts have to enjoy this party too.
+/         %p.long-copy
+/           Hello, we’re Online Catering, your new curated catering market place. We know you’re always busy. Not enough time to host and enjoy the party. So let us take care of that, we’re really good at it, we promise!
+/     .container.text-center
+/       .row
+/         .col-md-3
+/           %i.fa.fa-4x.fa-calendar
+/           %h3 Quality
+/           %p
+/             Quality is one of the major values defining us. We focus on quality control and the authenticity of the recipes as well as all the ingredients used for preparation.
+/         .col-md-3
+/           %i.fa.fa-4x.fa-clock-o
+/           %h3 On Time
+/           %p
+/             Choose the date and time of your party and we promise to be on time.
+/         .col-md-3
+/           %i.fa.fa-4x.fa-cart-plus
+/           %h3 Choice is yours
+/           %p
+/             From Starters to Desserts, we don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you.
+/         .col-md-3
+/           %i.fa.fa-4x.fa-check
+/           %h3 Affordable pricing
+/           %p
+/             Options for all budgets. With pricing fit for everyone. Host a party without breaking your wallet.
 
-  / Meals section
-  %section.section-meals
-    %ul.meals-showcase.clearfix
-      %li
-        %figure.meal-photo
-          %img{:alt => "Korean bibimbap with egg and vegetables", :src => "/images/1.jpg"}/
-      %li
-        %figure.meal-photo
-          %img{:alt => "Simple italian pizza with cherry tomatoes", :src => "/images/2.jpg"}/
-      %li
-        %figure.meal-photo
-          %img{:alt => "Chicken breast steak with vegetables", :src => "/images/3.jpg"}/
-      %li
-        %figure.meal-photo
-          %img{:alt => "Autumn pumpkin soup", :src => "/images/4.jpg"}/
-    %ul.meals-showcase.clearfix
-      %li
-        %figure.meal-photo
-          %img{:alt => "Paleo beef steak with vegetables", :src => "/images/5.jpg"}/
-      %li
-        %figure.meal-photo
-          %img{:alt => "Healthy baguette with egg and vegetables", :src => "/images/6.jpg"}/
-      %li
-        %figure.meal-photo
-          %img{:alt => "Burger with cheddar and bacon", :src => "/images/7.jpg"}/
-      %li
-        %figure.meal-photo
-          %img{:alt => "Granola with cherries and strawberries", :src => "/images/8.jpg"}/
+/   / Meals section
+/   %section.section-meals
+/     %ul.meals-showcase.clearfix
+/       %li
+/         %figure.meal-photo
+/           %img{:alt => "Korean bibimbap with egg and vegetables", :src => "/images/1.jpg"}/
+/       %li
+/         %figure.meal-photo
+/           %img{:alt => "Simple italian pizza with cherry tomatoes", :src => "/images/2.jpg"}/
+/       %li
+/         %figure.meal-photo
+/           %img{:alt => "Chicken breast steak with vegetables", :src => "/images/3.jpg"}/
+/       %li
+/         %figure.meal-photo
+/           %img{:alt => "Autumn pumpkin soup", :src => "/images/4.jpg"}/
+/     %ul.meals-showcase.clearfix
+/       %li
+/         %figure.meal-photo
+/           %img{:alt => "Paleo beef steak with vegetables", :src => "/images/5.jpg"}/
+/       %li
+/         %figure.meal-photo
+/           %img{:alt => "Healthy baguette with egg and vegetables", :src => "/images/6.jpg"}/
+/       %li
+/         %figure.meal-photo
+/           %img{:alt => "Burger with cheddar and bacon", :src => "/images/7.jpg"}/
+/       %li
+/         %figure.meal-photo
+/           %img{:alt => "Granola with cherries and strawberries", :src => "/images/8.jpg"}/
 
-  / Steps section
-  %section#works.section-steps.container
-    .row
-      %h2 How it works – Simple as 1, 2, 3
-      .row
-        .col-md-3
-        .col-md-6
-          .works-step
-            %div 1
-            %p Choose the date and time of your party.
-          .works-step
-            %div 2
-            %p Select from preferred packages and special offers that meet your needs
-          .works-step
-            %div 3
-            %p Place your order, sit back, and watch it all go off without a hitch. Voila!
+/   / Steps section
+/   %section#works.section-steps.container
+/     .row
+/       %h2 How it works – Simple as 1, 2, 3
+/       .row
+/         .col-md-3
+/         .col-md-6
+/           .works-step
+/             %div 1
+/             %p Choose the date and time of your party.
+/           .works-step
+/             %div 2
+/             %p Select from preferred packages and special offers that meet your needs
+/           .works-step
+/             %div 3
+/             %p Place your order, sit back, and watch it all go off without a hitch. Voila!
 
-  / Testimonials section
-  %section#caterers.section-testimonials
-    .row
-      %h2 Are you a caterer? We help to grow your business
-    .container.text-center
-      We are looking for the best restaurants in town. All types of cuisines are desired, from local delicacies to exotic eateries. The main thing we look for are restaurants that are fast and delicious! Think your restaurant fits the bill? Then apply now!
-    .row.text-center.caterer-section
-      %button.btn.btn-success.caterer Become a Caterer
+/   / Testimonials section
+/   %section#caterers.section-testimonials
+/     .row
+/       %h2 Are you a caterer? We help to grow your business
+/     .container.text-center
+/       We are looking for the best restaurants in town. All types of cuisines are desired, from local delicacies to exotic eateries. The main thing we look for are restaurants that are fast and delicious! Think your restaurant fits the bill? Then apply now!
+/     .row.text-center.caterer-section
+/       %button.btn.btn-success.caterer Become a Caterer
 
-  .row.last
-    .col-md-3
-    .col-md-6
-      %h1.text-center Keep in touch!
-      %form.contact-form{:action => "#", :method => "post"}
-        .row
-          .col.span-1-of-3
-            %label{:for => "name"} Name
-          .col.span-2-of-3
-            %input#name{:name => "name", :placeholder => "Your name", :required => "", :type => "text"}/
-        .row
-          .col.span-1-of-3
-            %label{:for => "email"} Email
-          .col.span-2-of-3
-            %input#email{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
-        .row
-          .col.span-1-of-3
-            %label{:for => "find-us"} How did you find us?
-          .col.span-2-of-3
-            %select#find-us{:name => "find-us"}
-              %option{:selected => "selected", :value => "friends"} Friends
-              %option{:value => "search"} Search engine
-              %option{:value => "ad"} Advertisement
-              %option{:value => "other"} Other
-        .row
-          .col.span-1-of-3
-            %label Newsletter
-          .col.span-2-of-3
-            %input#news{:checked => "checked", :name => "news", :type => "checkbox"}
-            Yes, please
-        .row
-          .col.span-1-of-3
-            %label Drop us a line
-          .col.span-2-of-3
-            %textarea{:name => "message", :placeholder => "Your message"}
-        .row
-          .col.span-1-of-3
-            %label  
-          .col.span-2-of-3
-            %input{:type => "submit", :value => "Send it!"}
+/   .row.last
+/     .col-md-3
+/     .col-md-6
+/       %h1.text-center Keep in touch!
+/       %form.contact-form{:action => "#", :method => "post"}
+/         .row
+/           .col.span-1-of-3
+/             %label{:for => "name"} Name
+/           .col.span-2-of-3
+/             %input#name{:name => "name", :placeholder => "Your name", :required => "", :type => "text"}/
+/         .row
+/           .col.span-1-of-3
+/             %label{:for => "email"} Email
+/           .col.span-2-of-3
+/             %input#email{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
+/         .row
+/           .col.span-1-of-3
+/             %label{:for => "find-us"} How did you find us?
+/           .col.span-2-of-3
+/             %select#find-us{:name => "find-us"}
+/               %option{:selected => "selected", :value => "friends"} Friends
+/               %option{:value => "search"} Search engine
+/               %option{:value => "ad"} Advertisement
+/               %option{:value => "other"} Other
+/         .row
+/           .col.span-1-of-3
+/             %label Newsletter
+/           .col.span-2-of-3
+/             %input#news{:checked => "checked", :name => "news", :type => "checkbox"}
+/             Yes, please
+/         .row
+/           .col.span-1-of-3
+/             %label Drop us a line
+/           .col.span-2-of-3
+/             %textarea{:name => "message", :placeholder => "Your message"}
+/         .row
+/           .col.span-1-of-3
+/             %label  
+/           .col.span-2-of-3
+/             %input{:type => "submit", :value => "Send it!"}
 
-  %footer
-    .row
-      .col-md-6
-        %ul.footer-nav
-          %li
-            %a{:href => "#"} About us
-          %li
-            %a{:href => "#"} For Caterers
-          %li
-            %a{:href => "#"} For Customers
-          %li
-            %a{:href => "#"} Blog
-          %li
-            %a{:href => "#"} Press
+/   %footer
+/     .row
+/       .col-md-6
+/         %ul.footer-nav
+/           %li
+/             %a{:href => "#"} About us
+/           %li
+/             %a{:href => "#"} For Caterers
+/           %li
+/             %a{:href => "#"} For Customers
+/           %li
+/             %a{:href => "#"} Blog
+/           %li
+/             %a{:href => "#"} Press
 
-      .col-md-6
-        %ul.social-links
-          %li
-            %a{:href => "#"}
-              %i.ion-social-facebook
-          %li
-            %a{:href => "#"}
-              %i.ion-social-twitter
-          %li
-            %a{:href => "#"}
-              %i.ion-social-googleplus
-          %l
-            %a{:href => "#"}
-              %i.ion-social-instagram
-    .row
-      %p
-        Copyright © 2015 by Online Catering. All rights reserved.
+/       .col-md-6
+/         %ul.social-links
+/           %li
+/             %a{:href => "#"}
+/               %i.ion-social-facebook
+/           %li
+/             %a{:href => "#"}
+/               %i.ion-social-twitter
+/           %li
+/             %a{:href => "#"}
+/               %i.ion-social-googleplus
+/           %l
+/             %a{:href => "#"}
+/               %i.ion-social-instagram
+/     .row
+/       %p
+/         Copyright © 2015 by Online Catering. All rights reserved.
